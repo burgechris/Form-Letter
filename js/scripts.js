@@ -21,8 +21,8 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $("#story").click(function() {
-    $("#bob").show();
-    $("#image").show();
-  });
+  $("button#submit").click(function() {
+    var userInput = $("textarea#comment").val();
+    alert(userInput.toUpperCase());
+});
 });
